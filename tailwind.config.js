@@ -5,7 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      "philosopher": ['Philosopher', 'sans-serif']
+    },
+    extend: {
+      spacing: {
+        '400': '100rem',
+        '160': '40rem'
+      }
+    },
   },
   plugins: [],
 }
