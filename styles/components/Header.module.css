@@ -1,0 +1,19 @@
+.homeMenuItem {
+  @apply border-blue-900 hover:text-blue-900 hover:shadow-blue-300;
+}
+
+.aboutMenuItem {
+  @apply border-red-900 hover:text-red-900 hover:shadow-red-300;
+}
+
+.projectsMenuItem {
+  @apply border-green-900 hover:text-green-900 hover:shadow-green-300;
+}
+
+.cvMenuItem {
+  @apply border-red-900 hover:text-red-900 hover:shadow-yellow-300;
+}
+
+.contactMenuItem {
+  @apply border-purple-900 hover:text-purple-900 hover:shadow-purple-300;
+}

@@ -6,12 +6,15 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      "philosopher": ['Philosopher', 'sans-serif']
+      "zenDots": ['Zen Dots', 'cursive']
     },
     extend: {
       spacing: {
         '400': '100rem',
         '160': '40rem'
+      },
+      transitionProperty: {
+        'shadow': 'box-shadow',
       }
     },
   },
