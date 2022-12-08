@@ -5,7 +5,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      "zenDots": ['Zen Dots', 'cursive']
+    },
+    extend: {
+      spacing: {
+        '400': '100rem',
+        '160': '40rem'
+      },
+      transitionProperty: {
+        'shadow': 'box-shadow',
+      }
+    },
   },
   plugins: [],
 }
