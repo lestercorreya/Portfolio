@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -6,12 +7,17 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      "zenDots": ['Zen Dots', 'cursive']
+      "zenDots": ['Zen Dots', 'cursive'],
+      "primary": ['Playfair Display', 'serif']
     },
     extend: {
-      spacing: {
-        '400': '100rem',
-        '160': '40rem'
+      colors: {
+        'primary': "#009BDF",
+        'secondary': "#758398"
+      },
+      backgroundImage: {
+        'home': "url('/static/images/home-background.png')",
+        'home-desktop': "url('/static/images/home-background-desktop.png')"
       },
       transitionProperty: {
         'shadow': 'box-shadow',

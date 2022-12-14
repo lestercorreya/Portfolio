@@ -1,14 +1,12 @@
 import Header from '../components/Header'
-import BackgroundImage from '../components/BackgroundImage'
+import HomeSection from '../components/HomeSection'
 
 export default function Home() {
 
   return (
     <div>
       <Header />
-      <div className='h-screen w-screen overflow-y-auto relative overflow-x-hidden' style={{ perspective: "10px", transformStyle: "preserve-3d" }}>
-        <BackgroundImage />
-      </div >
-    </div>
+      <HomeSection />
+    </div >
   )
 }
