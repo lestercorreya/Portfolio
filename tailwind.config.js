@@ -6,6 +6,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    minHeight: {
+      'regularScreen': '780px',
+    },
     fontFamily: {
       "zenDots": ['Zen Dots', 'cursive'],
       "primary": ['Playfair Display', 'serif']
