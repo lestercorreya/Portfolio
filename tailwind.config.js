@@ -14,9 +14,13 @@ module.exports = {
       "primary": ['Playfair Display', 'serif']
     },
     extend: {
+      flex: {
+        '2': '2 2 0%'
+      },
       colors: {
         'primary': "#009BDF",
-        'secondary': "#758398"
+        'secondary': "#758398",
+        'background': "#F6F8FA"
       },
       backgroundImage: {
         'home': "url('/static/images/home-background.png')",
@@ -24,6 +28,7 @@ module.exports = {
       },
       transitionProperty: {
         'shadow': 'box-shadow',
+        'width': "width"
       }
     },
   },
