@@ -2,6 +2,7 @@ import Header from '../components/Header'
 import HomeSection from '../components/HomeSection'
 import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkillsSection'
+import ResumeSection from '../components/ResumeSection'
 
 export default function Home() {
 
@@ -11,6 +12,7 @@ export default function Home() {
       <HomeSection />
       <AboutSection />
       <SkillsSection />
+      <ResumeSection />
     </div >
   )
 }
