@@ -18,7 +18,7 @@ const ProjectsSection = () => {
           <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' />
         </div>
         <div className='flex-1'>
-          <div className='text-3xl font-extrabold text-secondary mb-2'>Listenal</div>
+          <div className='text-3xl font-extrabold mb-2 font-primary'>Listenal</div>
           <div className='w-12 h-0.5 bg-primary mb-5'></div>
           <div className='text-secondary mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.</div>
           <button className='text-xl px-5 py-2 border-blue-300 border-2 text-primary md:text-3xl relative after:absolute after:top-0 after:left-0 after:w-0 hover:after:w-full after:h-full after:bg-primary after:transition-width after:-z-10 hover:text-white'>Watch Video</button>
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
           <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' />
         </div>
         <div className='flex-1'>
-          <div className='text-3xl font-extrabold text-secondary mb-2'>Listenal</div>
+          <div className='text-3xl font-extrabold font-primary mb-2'>Listenal</div>
           <div className='w-12 h-0.5 bg-primary mb-5'></div>
           <div className='text-secondary mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.</div>
           <button className='text-xl px-5 py-2 border-blue-300 border-2 text-primary md:text-3xl relative after:absolute after:top-0 after:left-0 after:w-0 hover:after:w-full after:h-full after:bg-primary after:transition-width after:-z-10 hover:text-white'>Watch Video</button>
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
           <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' />
         </div>
         <div className='flex-1'>
-          <div className='text-3xl font-extrabold text-secondary mb-2'>Listenal</div>
+          <div className='text-3xl font-extrabold font-primary mb-2'>Listenal</div>
           <div className='w-12 h-0.5 bg-primary mb-5'></div>
           <div className='text-secondary mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.</div>
           <button className='text-xl px-5 py-2 border-blue-300 border-2 text-primary md:text-3xl relative after:absolute after:top-0 after:left-0 after:w-0 hover:after:w-full after:h-full after:bg-primary after:transition-width after:-z-10 hover:text-white'>Watch Video</button>
