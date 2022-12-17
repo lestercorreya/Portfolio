@@ -8,7 +8,7 @@ const ProjectsSection = () => {
   });
 
   return (
-    <div className='min-h-regularScreen px-5 py-10 md:px-10 lg:px-48' ref={ref}>
+    <div className='min-h-regularScreen px-5 py-10 md:px-10 lg:px-48 bg-background' ref={ref}>
       <div className='text-5xl font-extrabold text-primary font-primary mb-20 md:text-6xl lg:text-7xl lg:mb-36'>My Projects</div>
       <div className='text-secondary text-lg mb-20 md:text-xl md:w-4/5 md:ml-20 lg:text-2xl lg:mb-36 border-l-2 border-primary pl-6'>
         <div className='transition-all duration-500' style={{ transform: inView ? "translateY(0)" : "translateY(50px)", opacity: inView ? "1" : "0" }}>A Collection of favorites projects Ive done recently. Feeling great while sharing them here</div>

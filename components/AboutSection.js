@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <div className='w-screen p-5 min-h-regularScreen flex flex-col justify-center md:px-10 lg:px-48 md:p-6 bg-background'>
+    <div className='w-screen p-5 min-h-regularScreen flex flex-col justify-center md:px-10 lg:px-48 md:p-6 bg-background/[0.9]'>
       <div className='text-primary mb-4 font-semibold md:text-lg md:mb-6'>About me</div>
       <div className='text-4xl font-primary mb-14 font-extrabold lg:text-5xl lg:mb-24'>I am an enthusiastic web developer based in New York, with a rich experience of over 6 years in website & product design.</div>
       <div className='md:flex'>

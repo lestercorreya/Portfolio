@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const FooterSection = () => {
   return (
-    <div className='p-5 bg-background md:px-10 md:pt-10'>
+    <div className='p-5 bg-white md:px-10 md:pt-10'>
       <div className='flex flex-col md:flex-row'>
         <div className='mb-10 flex-1'>
           <div className='font-primary text-primary font-extrabold mb-5 md:text-lg lg:text-xl lg:mb-6'>Social Links</div>

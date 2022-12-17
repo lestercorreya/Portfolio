@@ -1,14 +1,11 @@
 import React from 'react';
 import { EmailOutlined, PhoneOutlined } from '@mui/icons-material'
-import Image from 'next/image'
 
 const HomeSection = () => {
   return (
-    <div className='bg-home lg:bg-home-desktop w-screen bg-no-repeat pt-20 bg-cover lg:bg-contain'>
+    <div className='w-screen pt-20'>
       <div className='flex flex-col md:flex-row-reverse p-5 md:px-10 lg:px-48 min-h-regularScreen md:p-6'>
-        <div className='flex-1 flex justify-center items-center'>
-          <Image src="/static/images/profile-example.jpg" width={500} height={500} alt="Profile Picture" className='w-full rounded-full' />
-        </div>
+        <div className='flex-1'></div>
         <div className='flex-1 flex justify-center flex-col'>
           <div className='text-sm mb-4 text-secondary md:text-base lg:text-lg'>
             HELLO, MY NAME IS

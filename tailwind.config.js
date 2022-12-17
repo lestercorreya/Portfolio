@@ -22,10 +22,6 @@ module.exports = {
         'secondary': "#758398",
         'background': "#F6F8FA"
       },
-      backgroundImage: {
-        'home': "url('/static/images/home-background.png')",
-        'home-desktop': "url('/static/images/home-background-desktop.png')"
-      },
       transitionProperty: {
         'shadow': 'box-shadow',
         'width': "width"
