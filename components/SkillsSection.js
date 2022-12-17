@@ -8,7 +8,7 @@ const SkillsSection = () => {
   });
 
   return (
-    <div className='p-5 min-h-regularScreen md:flex lg:px-48 bg-white'>
+    <div className='p-5 min-h-regularScreen md:flex md:p-10 lg:px-48 bg-white'>
       <div className='mb-20 flex-1' ref={ref}>
         <div className='text-4xl font-primary mb-10 font-extrabold'>Skills</div>
         <div className='md:mr-16'>
