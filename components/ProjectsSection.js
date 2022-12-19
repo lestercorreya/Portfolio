@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image'
+import Image from 'next/image';
 
 const ProjectsSection = () => {
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
+
+  const [playVideo, setPlayVideo] = useState(false)
+  const [key, setKey] = useState(1)
 
   return (
     <div className='min-h-regularScreen px-5 py-10 md:px-10 lg:px-48 bg-background' ref={ref}>
@@ -15,7 +18,12 @@ const ProjectsSection = () => {
       </div>
       <div className='md:flex mb-20 transition-opacity duration-500 delay-500' style={{ opacity: inView ? "1" : "0" }}>
         <div className='mb-5 flex-1 md:pr-10 relative'>
-          <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' />
+          <div onClick={() => { setPlayVideo(true); setKey(key + 1) }}>
+            <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' style={{ display: playVideo ? "none" : "block" }} />
+          </div>
+          <div key={key}>
+            <video controls src={"/static/videos/trial.mp4"} style={{ width: "100%", height: "100%", display: playVideo ? "block" : "none" }} autoPlay={playVideo} />
+          </div>
         </div>
         <div className='flex-1'>
           <div className='text-3xl font-extrabold mb-2 font-primary'>Listenal</div>
@@ -24,7 +32,7 @@ const ProjectsSection = () => {
           <button className='text-xl px-5 py-2 border-blue-300 border-2 text-primary md:text-3xl relative after:absolute after:top-0 after:left-0 after:w-0 hover:after:w-full after:h-full after:bg-primary after:transition-width after:-z-10 hover:text-white'>Watch Video</button>
         </div>
       </div>
-      <div className='md:flex mb-20 transition-opacity duration-500 delay-500' style={{ opacity: inView ? "1" : "0" }}>
+      {/* <div className='md:flex mb-20 transition-opacity duration-500 delay-500' style={{ opacity: inView ? "1" : "0" }}>
         <div className='mb-5 flex-1 md:pr-10 relative'>
           <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' />
         </div>
@@ -34,8 +42,8 @@ const ProjectsSection = () => {
           <div className='text-secondary mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.</div>
           <button className='text-xl px-5 py-2 border-blue-300 border-2 text-primary md:text-3xl relative after:absolute after:top-0 after:left-0 after:w-0 hover:after:w-full after:h-full after:bg-primary after:transition-width after:-z-10 hover:text-white'>Watch Video</button>
         </div>
-      </div>
-      <div className='md:flex mb-20 transition-opacity duration-500 delay-500' style={{ opacity: inView ? "1" : "0" }}>
+      </div> */}
+      {/* <div className='md:flex mb-20 transition-opacity duration-500 delay-500' style={{ opacity: inView ? "1" : "0" }}>
         <div className='mb-5 flex-1 md:pr-10 relative'>
           <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' />
         </div>
@@ -45,7 +53,7 @@ const ProjectsSection = () => {
           <div className='text-secondary mb-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.</div>
           <button className='text-xl px-5 py-2 border-blue-300 border-2 text-primary md:text-3xl relative after:absolute after:top-0 after:left-0 after:w-0 hover:after:w-full after:h-full after:bg-primary after:transition-width after:-z-10 hover:text-white'>Watch Video</button>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
