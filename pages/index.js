@@ -17,6 +17,7 @@ export default function Home() {
       <SkillsSection />
       <ResumeSection />
       <ProjectsSection />
+      <a href="https://www.google.com/maps/?q=-15.623037,18.388672" target="_blank" rel="noreferrer">click</a>
       <FooterSection />
     </div >
   )
