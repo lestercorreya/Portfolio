@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <div className='h-20 px-5 md:px-10 lg:px-48 flex justify-between items-center fixed top-0 w-full z-20 bg-white'>
       <div className="flex justify-center items-center">
-        <Image src={logo} alt="logo" className='mr-2 w-6 md:w-8' />
+        <Image src={logo} priority alt="logo" className='mr-2 w-6 md:w-8' />
         <div className="font-zenDots text-sm md:text-lg">LESTER CORREYA</div>
       </div>
       <div className={`${!isMenuOpen ? "block" : "hidden"} lg:hidden`} onClick={() => setIsMenuOpen(true)}>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
+import projectImage1 from '../public/static/images/project-example.png'
 
 const ProjectsSection = () => {
   const { ref, inView } = useInView({
@@ -19,8 +20,7 @@ const ProjectsSection = () => {
       <div className='md:flex mb-20 transition-opacity duration-500 delay-500' style={{ opacity: inView ? "1" : "0" }}>
         <div className='mb-5 flex-1 md:pr-10 relative'>
           <div onClick={() => { setPlayVideo(true); setKey(key + 1) }}>
-            <Image src="/static/images/project-example.png" width={500} height={500} alt="Project Thumbnail" className='w-full' style={{ display: playVideo ? "none" : "block" }} />
-            <img src="./static/images/project-example.png" alt="sdfsdf" />
+            <Image src={projectImage1} priority alt="Project Thumbnail" className='w-full' style={{ display: playVideo ? "none" : "block" }} />
           </div>
           <div key={key}>
             <video controls src="/static/videos/trial.mp4" style={{ width: "100%", height: "100%", display: playVideo ? "block" : "none" }} autoPlay={playVideo} />
