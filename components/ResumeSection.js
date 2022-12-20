@@ -20,7 +20,7 @@ const ResumeSection = () => {
         </div>
       </div >
       <div className='flex-1 justify-center items-center flex drop-shadow-xl z-10 relative' style={{ perspective: "100px" }}>
-        <Image src={resumeImage} placeholder="blur" alt="Resume" className='w-full transition-all duration-500 ease-in' style={{ transform: inView ? "translateZ(0)" : "translateZ(-10px)" }} />
+        <Image src={resumeImage} priority alt="Resume" className='w-full transition-all duration-500 ease-in' style={{ transform: inView ? "translateZ(0)" : "translateZ(-10px)" }} />
         <div className='w-full h-full absolute' style={{ backdropFilter: inView ? "" : "grayscale(90%)" }}></div>
       </div>
     </div >
