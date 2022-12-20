@@ -1,6 +1,7 @@
 import React from 'react'
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image'
+import resumeImage from '../public/static/images/resume.jpg'
 
 const ResumeSection = () => {
   const { ref, inView } = useInView({
@@ -19,7 +20,7 @@ const ResumeSection = () => {
         </div>
       </div >
       <div className='flex-1 justify-center items-center flex drop-shadow-xl z-10 relative' style={{ perspective: "100px" }}>
-        <Image src="/static/images/resume.jpg" width={500} height={500} alt="Resume" className='w-full transition-all duration-500 ease-in' style={{ transform: inView ? "translateZ(0)" : "translateZ(-10px)" }} />
+        <Image src={resumeImage} alt="Resume" className='w-full transition-all duration-500 ease-in' style={{ transform: inView ? "translateZ(0)" : "translateZ(-10px)" }} />
         <div className='w-full h-full absolute' style={{ backdropFilter: inView ? "" : "grayscale(90%)" }}></div>
       </div>
     </div >

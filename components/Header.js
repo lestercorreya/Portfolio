@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import logo from "../public/static/images/logo.png"
 import { Menu, Close } from '@mui/icons-material'
 
 const Header = () => {
@@ -31,7 +32,7 @@ const Header = () => {
   return (
     <div className='h-20 px-5 md:px-10 lg:px-48 flex justify-between items-center fixed top-0 w-full z-20 bg-white'>
       <div className="flex justify-center items-center">
-        <Image src="/static/images/logo.png" alt="logo" width="32" height="32" className='mr-2 w-6 md:w-8' />
+        <Image src={logo} alt="logo" className='mr-2 w-6 md:w-8' />
         <div className="font-zenDots text-sm md:text-lg">LESTER CORREYA</div>
       </div>
       <div className={`${!isMenuOpen ? "block" : "hidden"} lg:hidden`} onClick={() => setIsMenuOpen(true)}>
