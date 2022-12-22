@@ -33,7 +33,7 @@ const FooterSection = () => {
       <div className='h-0.5 bg-primary mb-6'></div>
       <div className='flex'>
         <div className='flex items-center'>
-          <Image src={logo} priority alt="logo" className='mr-2 w-4 md:w-6' />
+          <Image src={logo} alt="logo" className='mr-2 w-4 md:w-6' />
           <div className='font-zenDots text-xs md:text-base'>LESTER CORREYA</div>
         </div>
       </div>
