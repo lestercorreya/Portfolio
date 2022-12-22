@@ -1,5 +1,5 @@
 import React from 'react';
-import { EmailOutlined, PhoneOutlined } from '@mui/icons-material'
+import { EmailOutlined, PhoneOutlined, LocationCity } from '@mui/icons-material'
 
 const HomeSection = () => {
   return (
@@ -13,8 +13,9 @@ const HomeSection = () => {
           <div className='w-12 h-0.5 mb-10 bg-secondary lg:mb-16'></div>
           <div className='text-5xl mb-4 font-primary font-extrabold lg:text-7xl'>Lester Correya</div>
           <div className='text-xl text-secondary mb-10 font-primary font-extrabold md:text-2xl lg:text-4xl lg:mb-20'>Web Developer</div>
-          <div className='mb-2 text-lg md:text-xl'><span className='mr-2 text-primary'><EmailOutlined /></span> lestercorreya@gmail.com</div>
-          <div className='mb-2 text-lg md:text-xl'><span className='mr-2 text-primary'><PhoneOutlined /></span>+91 9740588747</div>
+          <div className='mb-4 text-lg md:text-xl'><span className='mr-2 text-primary'><EmailOutlined /></span> lestercorreya@gmail.com</div>
+          <div className='mb-4 text-lg md:text-xl'><span className='mr-2 text-primary'><PhoneOutlined /></span>+91 9740588747</div>
+          <div className='text-lg md:text-xl'><span className='mr-2 text-primary'><LocationCity /></span>Melbourne, Victoria State, Australia</div>
         </div>
       </div>
     </div>
