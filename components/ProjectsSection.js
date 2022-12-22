@@ -39,10 +39,10 @@ const ProjectsSection = () => {
       </div>
       {projects.map((project, index) => {
         return (
-          <div className='md:flex mb-20 transition-opacity duration-500 delay-500' style={{ opacity: inView ? "1" : "0" }} key={project.title}>
-            <div className='mb-5 flex-1 md:pr-10 relative'>
+          <div className='md:flex mb-16 transition-opacity duration-500 delay-500 md:mb-10' style={{ opacity: inView ? "1" : "0", flexDirection: index % 2 === 0 ? "row-reverse" : "row" }} key={project.title}>
+            <div className='mb-5 flex-1 relative md:mb-0'>
               <div onClick={() => handleProjectImageClick(index)} className="relative flex justify-center items-center cursor-pointer" style={{ display: playingVideoIndex === index ? "none" : "flex" }}>
-                <Image src={project.image} alt="Project Thumbnail" className='w-full' />
+                <Image src={project.image} alt="Project Thumbnail" className='w-full border-primary' />
                 <div className='absolute w-12 h-12 rounded-full bg-black opacity-50 lg:w-24 lg:h-24 lg:hidden'></div>
                 <div className='w-full h-full flex justify-center items-center lg:opacity-70 lg:hover:opacity-100 absolute'>
                   <PlayCircleOutlined className='text-7xl text-white rounded-full lg:text-9xl' />
@@ -52,10 +52,10 @@ const ProjectsSection = () => {
                 <video controls src={`/static/videos/${project.video}`} style={{ width: "100%", height: "100%", display: playingVideoIndex === index ? "block" : "none" }} autoPlay={playingVideoIndex === index} />
               </div>
             </div>
-            <div className='flex-1'>
-              <div className='text-3xl font-extrabold mb-2 font-primary'>Listenal</div>
-              <div className='w-12 h-0.5 bg-primary mb-5'></div>
-              <div className='text-secondary mb-5 lg:text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.</div>
+            <div className='flex-1 flex justify-center flex-col'>
+              <div className='text-3xl font-extrabold mb-2 font-primary md:mx-5'>Listenal</div>
+              <div className='w-12 h-0.5 bg-primary mb-5 md:mx-5'></div>
+              <div className='text-secondary mb-5 lg:text-xl md:mx-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.</div>
             </div>
           </div>
         )

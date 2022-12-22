@@ -4,28 +4,12 @@ import logo from "../public/static/images/logo.png"
 import { Menu, Close } from '@mui/icons-material'
 
 const Header = () => {
-  const menuItems = {
-    home: {
-      text: "HOME",
-      className: "homeMenuItem"
-    },
-    about: {
-      text: "ABOUT",
-      className: "aboutMenuItem"
-    },
-    projects: {
-      text: "PROJECTS",
-      className: "projectsMenuItem"
-    },
-    cv: {
-      text: "CV",
-      className: "cvMenuItem"
-    },
-    contact: {
-      text: "CONTACT",
-      className: "contactMenuItem"
-    },
-  }
+  const menuItems = [
+    "HOME",
+    "ABOUT",
+    "RESUME",
+    "PROJECTS"
+  ]
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -42,16 +26,16 @@ const Header = () => {
         <Close className='text-3xl' />
       </div>
       <ul className={`${isMenuOpen ? "block" : "hidden"} w-full absolute left-0 top-full bg-white lg:hidden`}>
-        {Object.keys(menuItems).map((item, index) => {
+        {menuItems.map((title) => {
           return (
-            <li className={`border-b-2 ${index === 0 && "border-t-2"} border-gray-100 p-6 md:px-12`} key={menuItems[item].text}>{menuItems[item].text}</li>
+            <li className={`border-b-2 border-gray-100 p-6 md:px-12`} key={title}>{title}</li>
           )
         })}
       </ul>
       <ul className='hidden lg:flex text-lg items-center'>
-        {Object.keys(menuItems).map(item => {
+        {menuItems.map(title => {
           return (
-            <li className={`ml-10 px-2 py-1 rounded-lg transition-shadow hover:font-semibold hover:cursor-pointer hover:shadow-lg ${menuItems[item].className}`} key={menuItems[item].text}>{menuItems[item].text}</li>
+            <li className={`ml-10 px-2 py-1 rounded-lg transition-shadow hover:font-semibold hover:cursor-pointer hover:shadow-lg border-blue-900 hover:text-blue-900 hover:shadow-blue-300`} key={title}>{title}</li>
           )
         })}
       </ul>
