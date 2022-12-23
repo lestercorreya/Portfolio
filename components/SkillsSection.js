@@ -1,65 +1,57 @@
 import React from 'react'
-import { useInView } from 'react-intersection-observer';
 
-const SkillsSection = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
+const SkillsSection = (props) => {
+  const { setRefs, skillsInView } = props
+  const skills = [
+    {
+      "name": "Git",
+      "level": "90%"
+    },
+    {
+      "name": "Next JS",
+      "level": "90%"
+    },
+    {
+      "name": "Node JS",
+      "level": "75%"
+    },
+    {
+      "name": "Flutter",
+      "level": "65%"
+    },
+    {
+      "name": "MongoDB",
+      "level": "75%"
+    },
+    {
+      "name": "HTML",
+      "level": "90%"
+    },
+    {
+      "name": "MySQL",
+      "level": "65%"
+    },
+    {
+      "name": "CSS",
+      "level": "90%"
+    },
+  ]
 
   return (
     <div className='p-5 min-h-regularScreen md:flex md:p-10 lg:px-48 bg-white'>
-      <div className='mb-20 flex-1' ref={ref}>
+      <div className='mb-20 flex-1' ref={(node) => setRefs(node, "skills")}>
         <div className='text-4xl font-primary mb-10 font-extrabold'>Skills</div>
         <div className='md:mr-16'>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>Git</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "90%" : "0", opacity: inView ? "1" : "0" }}>90%</div>
-            </div>
-          </div>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>React JS</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "90%" : "0", opacity: inView ? "1" : "0" }}>90%</div>
-            </div>
-          </div>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>Node JS</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "75%" : "0", opacity: inView ? "1" : "0" }}>75%</div>
-            </div>
-          </div>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>Flutter</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "65%" : "0", opacity: inView ? "1" : "0" }}>65%</div>
-            </div>
-          </div>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>MongoDB</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "75%" : "0", opacity: inView ? "1" : "0" }}>75%</div>
-            </div>
-          </div>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>HTML</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "90%" : "0", opacity: inView ? "1" : "0" }}>90%</div>
-            </div>
-          </div>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>MySQL</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "65%" : "0", opacity: inView ? "1" : "0" }}>65%</div>
-            </div>
-          </div>
-          <div className='mb-6'>
-            <div className='text-secondary mb-2'>CSS</div>
-            <div className='h-5 rounded-full bg-white'>
-              <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: inView ? "90%" : "0", opacity: inView ? "1" : "0" }}>90%</div>
-            </div>
-          </div>
+          {skills.map((skill) => {
+            return (
+              <div className='mb-6' key={skill.name}>
+                <div className='text-secondary mb-2'>{skill.name}</div>
+                <div className='h-5 rounded-full bg-white'>
+                  <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: skillsInView ? skill.level : "0", opacity: skillsInView ? "1" : "0" }}>{skill.level}</div>
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
       <div className='flex-1'>

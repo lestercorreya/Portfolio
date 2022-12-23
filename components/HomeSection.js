@@ -1,9 +1,11 @@
 import React from 'react';
 import { EmailOutlined, PhoneOutlined, LocationCity } from '@mui/icons-material'
 
-const HomeSection = () => {
+const HomeSection = (props) => {
+  const { setRefs } = props
+
   return (
-    <div className='w-screen pt-20'>
+    <div className='w-screen pt-20' ref={(node) => setRefs(node, "home")}>
       <div className='flex flex-col md:flex-row-reverse p-5 md:px-10 lg:px-48 min-h-regularScreen md:p-6'>
         <div className='flex-1'></div>
         <div className='flex-1 flex justify-center flex-col'>

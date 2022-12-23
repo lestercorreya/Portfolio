@@ -3,13 +3,9 @@ import Image from 'next/image'
 import logo from "../public/static/images/logo.png"
 import { Menu, Close } from '@mui/icons-material'
 
-const Header = () => {
-  const menuItems = [
-    "HOME",
-    "ABOUT",
-    "RESUME",
-    "PROJECTS"
-  ]
+const Header = (props) => {
+  const { sections, sectionTitles, sectionInView } = props
+  const menuHighlightedStyles = { color: "rgb(30 58 138)", fontWeight: "bolder", boxShadow: "0 10px 15px -3px #93c5fd" }
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -26,16 +22,16 @@ const Header = () => {
         <Close className='text-3xl' />
       </div>
       <ul className={`${isMenuOpen ? "block" : "hidden"} w-full absolute left-0 top-full bg-white lg:hidden`}>
-        {menuItems.map((title) => {
+        {sections.map(section => {
           return (
-            <li className={`border-b-2 border-gray-100 p-6 md:px-12`} key={title}>{title}</li>
+            <li className={`border-b-2 border-gray-100 p-6 md:px-12`} key={section}>{sectionTitles[section]}</li>
           )
         })}
       </ul>
       <ul className='hidden lg:flex text-lg items-center'>
-        {menuItems.map(title => {
+        {sections.map(section => {
           return (
-            <li className={`ml-10 px-2 py-1 rounded-lg transition-shadow hover:font-semibold hover:cursor-pointer hover:shadow-lg border-blue-900 hover:text-blue-900 hover:shadow-blue-300`} key={title}>{title}</li>
+            <li className={`ml-10 px-2 py-1 rounded-lg transition-shadow hover:font-semibold hover:cursor-pointer hover:shadow-lg hover:text-blue-900 hover:shadow-blue-300`} key={section} style={sectionInView === section ? menuHighlightedStyles : {}}>{sectionTitles[section]}</li>
           )
         })}
       </ul>

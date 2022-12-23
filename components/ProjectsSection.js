@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import projectImage1 from '../public/static/images/project-example.png'
 import { PlayCircleOutlined } from '@mui/icons-material'
 
-const ProjectsSection = () => {
+const ProjectsSection = (props) => {
+  const { setRefs, projectsInView } = props
   const projects = [
     {
       "title": "Listenal",
@@ -19,9 +19,6 @@ const ProjectsSection = () => {
       "video": "trial.mp4"
     },
   ]
-  const { ref, inView } = useInView({
-    threshold: 0.2,
-  });
 
   const [playingVideoIndex, setPlayingVideoIndex] = useState("")
   const [key, setKey] = useState(1)
@@ -32,14 +29,14 @@ const ProjectsSection = () => {
   }
 
   return (
-    <div className='min-h-regularScreen px-5 py-10 md:px-10 lg:px-48 bg-background' ref={ref}>
+    <div className='min-h-regularScreen px-5 py-10 md:px-10 lg:px-48 bg-background' ref={(node) => setRefs(node, "projects")}>
       <div className='text-5xl font-extrabold text-primary font-primary mb-20 md:text-6xl lg:text-7xl lg:mb-36'>My Projects</div>
       <div className='text-secondary text-lg mb-20 md:text-xl md:w-4/5 md:ml-20 lg:text-2xl lg:mb-36 border-l-2 border-primary pl-6'>
-        <div className='transition-all duration-500' style={{ transform: inView ? "translateY(0)" : "translateY(50px)", opacity: inView ? "1" : "0" }}>A Collection of favorites projects Ive done recently. Feeling great while sharing them here</div>
+        <div className='transition-all duration-500' style={{ transform: projectsInView ? "translateY(0)" : "translateY(50px)", opacity: projectsInView ? "1" : "0" }}>A Collection of favorites projects Ive done recently. Feeling great while sharing them here</div>
       </div>
       {projects.map((project, index) => {
         return (
-          <div className='md:flex mb-16 transition-opacity duration-500 delay-500 md:mb-10' style={{ opacity: inView ? "1" : "0", flexDirection: index % 2 === 0 ? "row-reverse" : "row" }} key={project.title}>
+          <div className='md:flex mb-16 transition-opacity duration-500 delay-500 md:mb-10' style={{ opacity: projectsInView ? "1" : "0", flexDirection: index % 2 === 0 ? "row-reverse" : "row" }} key={project.title}>
             <div className='mb-5 flex-1 relative md:mb-0'>
               <div onClick={() => handleProjectImageClick(index)} className="relative flex justify-center items-center cursor-pointer" style={{ display: playingVideoIndex === index ? "none" : "flex" }}>
                 <Image src={project.image} alt="Project Thumbnail" className='w-full border-primary' />
