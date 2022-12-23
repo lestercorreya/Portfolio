@@ -6,9 +6,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+/* @layer components {
   @import "./components/Header.module.css";
-}
+} */
 
 @layer base {
   html {
