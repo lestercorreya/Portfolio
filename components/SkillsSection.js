@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const SkillsSection = (props) => {
   const { setRefs, skillsInView } = props
@@ -37,6 +37,14 @@ const SkillsSection = (props) => {
     },
   ]
 
+  const [onceInView, setOnceInView] = useState(false)
+
+  useEffect(() => {
+    if (!onceInView && skillsInView) {
+      setOnceInView(true)
+    }
+  }, [skillsInView])
+
   return (
     <div className='p-5 min-h-regularScreen md:flex md:p-10 lg:px-48 bg-white'>
       <div className='mb-20 flex-1' ref={(node) => setRefs(node, "skills")}>
@@ -47,7 +55,7 @@ const SkillsSection = (props) => {
               <div className='mb-6' key={skill.name}>
                 <div className='text-secondary mb-2'>{skill.name}</div>
                 <div className='h-5 rounded-full bg-white'>
-                  <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: skillsInView ? skill.level : "0", opacity: skillsInView ? "1" : "0" }}>{skill.level}</div>
+                  <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: onceInView ? skill.level : "0", opacity: onceInView ? "1" : "0" }}>{skill.level}</div>
                 </div>
               </div>
             )
