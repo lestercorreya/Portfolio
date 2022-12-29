@@ -84,13 +84,23 @@ export default function Home() {
     }
   }
 
-  const hello = () => {
-    skillsRef.current.scrollIntoView({ behavior: "smooth", block: "end" })
+  const handleSectionHeaderClick = (sectionHeader) => {
+    if (sectionHeader === "home") {
+      homeRef.current.scrollIntoView({ behavior: "smooth" })
+    } else if (sectionHeader === "about") {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" })
+    } else if (sectionHeader === "skills") {
+      skillsRef.current.scrollIntoView({ behavior: "smooth" })
+    } else if (sectionHeader === "projects") {
+      projectsRef.current.scrollIntoView({ behavior: "smooth" })
+    } else if (sectionHeader === "resume") {
+      resumeRef.current.scrollIntoView({ behavior: "smooth" })
+    }
   }
 
   return (
     <div className='overflow-x-hidden'>
-      <Header sections={sections} sectionTitles={sectionTitles} sectionInView={sectionInView} />
+      <Header sections={sections} sectionTitles={sectionTitles} sectionInView={sectionInView} handleSectionHeaderClick={handleSectionHeaderClick} />
       <FixedBackground homeInView={homeInView} />
       <HomeSection setRefs={setRefs} />
       <AboutSection setRefs={setRefs} />
@@ -98,7 +108,6 @@ export default function Home() {
       <ProjectsSection setRefs={setRefs} projectsInView={projectsInView} />
       <ResumeSection setRefs={setRefs} resumeInView={resumeInView} />
       <FooterSection />
-      <div onClick={hello}>click me</div>
     </div >
   )
 }
