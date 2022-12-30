@@ -16,7 +16,7 @@ const Header = (props) => {
 
   return (
     <div className='h-20 px-5 md:px-10 lg:px-48 flex justify-between items-center fixed top-0 w-full z-20 bg-white'>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center cursor-pointer" onClick={() => sectionHeaderClickHandler("home")}>
         <Image src={logo} priority alt="logo" className='mr-2 w-6 md:w-8' />
         <div className="font-zenDots text-sm md:text-lg">LESTER CORREYA</div>
       </div>

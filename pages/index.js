@@ -101,7 +101,7 @@ export default function Home() {
   return (
     <div className='overflow-x-hidden'>
       <Header sections={sections} sectionTitles={sectionTitles} sectionInView={sectionInView} handleSectionHeaderClick={handleSectionHeaderClick} />
-      <FixedBackground homeInView={homeInView} />
+      <FixedBackground homeInView={homeInView} handleSectionHeaderClick={handleSectionHeaderClick} />
       <HomeSection setRefs={setRefs} />
       <AboutSection setRefs={setRefs} />
       <SkillsSection setRefs={setRefs} skillsInView={skillsInView} />
