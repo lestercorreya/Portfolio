@@ -49,7 +49,7 @@ const ProjectsSection = (props) => {
                 <Image src={project.image} alt="Project Thumbnail" className='w-full border-primary' />
                 <div className='absolute w-12 h-12 rounded-full bg-black opacity-50 lg:w-24 lg:h-24 lg:hidden'></div>
                 <div className='w-full h-full flex justify-center items-center lg:opacity-70 lg:hover:opacity-100 absolute'>
-                  <PlayCircleOutlined className='text-7xl text-white rounded-full lg:text-9xl' />
+                  <PlayCircleOutlined className='!text-7xl text-white rounded-full lg:!text-9xl' />
                 </div>
               </div>
               <div key={key}>
