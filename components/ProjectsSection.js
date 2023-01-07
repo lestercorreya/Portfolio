@@ -1,22 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image';
-import projectImage1 from '../public/static/images/project-example.png'
+import projectImage1 from '../public/static/images/project_1.png'
+import projectImage2 from '../public/static/images/project_2.jpg'
+import projectImage3 from '../public/static/images/project_3.png'
 import { PlayCircleOutlined } from '@mui/icons-material'
 
 const ProjectsSection = (props) => {
   const { setRefs, projectsInView } = props
   const projects = [
     {
-      "title": "Listenal",
+      "title": "Chess Burst",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.",
       "image": projectImage1,
-      "video": "trial.mp4"
+      "video": "project_1.mkv"
     },
     {
       "title": "Listenal",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.",
-      "image": projectImage1,
-      "video": "trial.mp4"
+      "image": projectImage2,
+      "video": "project_2.mkv"
+    },
+    {
+      "title": "Python Mini Projects",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eveniet nam atque ab distinctio perspiciatis odit iste dolor est odio.",
+      "image": projectImage3,
+      "video": "project_3.mp4"
     },
   ]
 
