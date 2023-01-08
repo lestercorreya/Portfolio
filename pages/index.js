@@ -1,5 +1,6 @@
 import { useInView } from 'react-intersection-observer';
 import { useState, useEffect, useRef, useCallback } from 'react'
+import Head from 'next/head'
 
 import Header from '../components/Header'
 import HomeSection from '../components/HomeSection'
@@ -100,6 +101,9 @@ export default function Home() {
 
   return (
     <div className='overflow-x-hidden'>
+      <Head>
+        <title>Lester Correya</title>
+      </Head>
       <Header sections={sections} sectionTitles={sectionTitles} sectionInView={sectionInView} handleSectionHeaderClick={handleSectionHeaderClick} />
       <FixedBackground homeInView={homeInView} handleSectionHeaderClick={handleSectionHeaderClick} />
       <HomeSection setRefs={setRefs} />
