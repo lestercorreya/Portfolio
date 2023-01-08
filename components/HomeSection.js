@@ -20,7 +20,7 @@ const HomeSection = (props) => {
             <a href="mailto:lestercorreya@gmail.com" target="_blank" rel="noreferrer" className='hover:text-primary'>lestercorreya@gmail.com</a>
           </div>
           <div className='mb-4 text-lg md:text-xl flex items-center'><span className='mr-2 text-primary'><PhoneOutlined /></span>
-            <a href="tel:+91 9740588747" target="_blank" rel="noreferrer" className='hover:text-primary'>+91 9740588747</a>
+            <a href="tel:+91 9740588747" target="_blank" rel="noreferrer" className='hover:text-primary'>+61 412 354 231</a>
           </div>
           <div className='text-lg md:text-xl flex items-center'><span className='mr-2 text-primary'><LocationCity /></span>
             <a href="https://www.google.com/maps/place/Melbourne+VIC,+Australia" target="_blank" rel="noreferrer" className='hover:text-primary'>Melbourne, Victoria State, Australia</a>
