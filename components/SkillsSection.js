@@ -35,6 +35,10 @@ const SkillsSection = (props) => {
       "name": "CSS",
       "level": "90%"
     },
+    {
+      "name": "Typescript",
+      "level": "75%"
+    },
   ]
 
   const [onceInView, setOnceInView] = useState(false)
@@ -66,19 +70,6 @@ const SkillsSection = (props) => {
         <div className='text-4xl font-primary mb-10 font-extrabold lg:mb-20'>My Experience</div>
         <div className='mb-16 lg:flex'>
           <div className='mb-5 flex-1 lg:mr-10'>
-            <div className='mb-2 font-semibold'>Mar 2021 - Nov 2021</div>
-            <div className='h-px bg-slate-300 w-full mb-2'></div>
-            <div className='text-secondary'>Exathought Technology Consulting Pvt Ltd</div>
-          </div>
-          <div className='flex-2'>
-            <div className='text-primary text-xl mb-4 font-semibold'>Software Developer Intern</div>
-            <div className='mb-3'>Added additional pages to the company’s main website using 3rd party libraries to implement complex UI elements to improve customer user experience.</div>
-            <div className='mb-3'>Was one of the 5 developers assigned in developing the front-end of a wholesaler-retailer cross-platform mobile app using Flutter.</div>
-            <div className='mb-3'>Closely worked with UI UX designers to ensure all the functionalities are added without compromising on aesthetics and with backend developers for writing maintainable code and for better performance.</div>
-          </div>
-        </div>
-        <div className='lg:flex'>
-          <div className='mb-5 flex-1 lg:mr-10'>
             <div className='mb-2 font-semibold'>May 2022 - Nov 2022</div>
             <div className='h-px bg-slate-300 w-full mb-2'></div>
             <div className='text-secondary'>Vah Vah Institute Pvt Ltd</div>
@@ -89,6 +80,19 @@ const SkillsSection = (props) => {
             <div className='mb-3'>Added backend and frontend functionalities to the company’s admin website based on the requirement provided by writing complex yet manageable queries by hitting the right indexes to decrease the response time for better performance.</div>
             <div className='mb-3'>Fixed 50+ bugs in the admin website by understanding the previously written code and making the necessary changes from both the backend and frontend perspectives.</div>
             <div className='mb-3'>Wrote 3 Cron services for automatic hassle-free updation of database values as per requirement.</div>
+          </div>
+        </div>
+        <div className='lg:flex'>
+          <div className='mb-5 flex-1 lg:mr-10'>
+            <div className='mb-2 font-semibold'>Aug 2021 - Dec 2021</div>
+            <div className='h-px bg-slate-300 w-full mb-2'></div>
+            <div className='text-secondary'>Exathought Technology Consulting Pvt Ltd</div>
+          </div>
+          <div className='flex-2'>
+            <div className='text-primary text-xl mb-4 font-semibold'>Software Developer Intern</div>
+            <div className='mb-3'>Added additional pages to the company’s main website using 3rd party libraries to implement complex UI elements to improve customer user experience.</div>
+            <div className='mb-3'>Was one of the 5 developers assigned in developing the front-end of a wholesaler-retailer cross-platform mobile app using Flutter.</div>
+            <div className='mb-3'>Closely worked with UI UX designers to ensure all the functionalities are added without compromising on aesthetics and with backend developers for writing maintainable code and for better performance.</div>
           </div>
         </div>
       </div>
