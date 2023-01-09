@@ -8,7 +8,7 @@ const SkillsSection = (props) => {
       "level": "90%"
     },
     {
-      "name": "Next JS",
+      "name": "React JS and Next JS",
       "level": "90%"
     },
     {
