@@ -58,7 +58,7 @@ const SkillsSection = (props) => {
             return (
               <div className='mb-6' key={skill.name}>
                 <div className='text-secondary mb-2'>{skill.name}</div>
-                <div className='h-5 rounded-full bg-white'>
+                <div className='h-5 rounded-full bg-background'>
                   <div className='h-full bg-primary rounded-l-full text-white flex justify-end items-center px-2 ease-in duration-700 transition-width' style={{ width: onceInView ? skill.level : "0", opacity: onceInView ? "1" : "0" }}>{skill.level}</div>
                 </div>
               </div>
