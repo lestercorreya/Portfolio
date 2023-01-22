@@ -14,7 +14,7 @@ const HomeSection = (props) => {
           </div>
           <div className='w-12 h-0.5 mb-10 bg-secondary lg:mb-16'></div>
           <div className='text-5xl mb-4 font-primary font-extrabold lg:text-7xl'>Lester Correya</div>
-          <div className='text-xl text-secondary mb-10 font-primary font-extrabold md:text-2xl lg:text-4xl lg:mb-20'>Web Developer</div>
+          <div className='text-xl text-secondary mb-10 font-primary font-extrabold md:text-2xl lg:text-4xl lg:mb-20'>Software Developer</div>
           <div className='mb-4 text-lg md:text-xl flex items-center'>
             <span className='mr-2 text-primary'><EmailOutlined /></span>
             <a href="mailto:lestercorreya@gmail.com" target="_blank" rel="noreferrer" className='hover:text-primary'>lestercorreya@gmail.com</a>
