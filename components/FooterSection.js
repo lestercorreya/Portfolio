@@ -11,11 +11,11 @@ const FooterSection = () => {
           <div className='font-primary text-primary font-extrabold mb-5 md:text-lg lg:text-xl lg:mb-6'>Social Links</div>
           <div className='flex items-center md:mb-2'>
             <LinkedIn className='text-3xl mr-2' />
-            <a href="https://github.com/lestercorreya" target="_blank" rel="noreferrer" className='text-secondary lg:text-lg hover:text-primary'>github.com/lestercorreya</a>
+            <a href="https://github.com/lestercorreya" target="_blank" rel="noreferrer" className='text-secondary lg:text-lg hover:text-primary'>linkedIn.com/in/lester-correya</a>
           </div>
           <div className='flex items-center'>
             <GitHub className='text-3xl mr-2' />
-            <a href="https://www.linkedin.com/in/lester-correya" target="_blank" rel="noreferrer" className='text-secondary lg:text-lg hover:text-primary'>linkedIn.com/in/lester-correya</a>
+            <a href="https://www.linkedin.com/in/lester-correya" target="_blank" rel="noreferrer" className='text-secondary lg:text-lg hover:text-primary'>github.com/lestercorreya</a>
           </div>
         </div>
         <div className='mb-6 flex-1'>
