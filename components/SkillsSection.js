@@ -12,6 +12,10 @@ const SkillsSection = (props) => {
       "level": "90%"
     },
     {
+      "name": "Typescript",
+      "level": "75%"
+    },
+    {
       "name": "Node JS",
       "level": "75%"
     },
@@ -34,10 +38,6 @@ const SkillsSection = (props) => {
     {
       "name": "CSS",
       "level": "90%"
-    },
-    {
-      "name": "Typescript",
-      "level": "75%"
     },
   ]
   const experiences = [

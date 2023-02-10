@@ -22,7 +22,7 @@ export default function Home() {
   const sectionTitles = {
     home: "HOME",
     about: "ABOUT",
-    skills: "SKILLS",
+    skills: "EXPERIENCE",
     projects: "PROJECTS",
     resume: "RESUME"
   }
