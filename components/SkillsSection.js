@@ -4,23 +4,23 @@ const SkillsSection = (props) => {
   const { setRefs, skillsInView } = props
   const skills = [
     {
+      "name": "Excel VBA",
+      "level": "90%"
+    },
+    {
       "name": "Git",
       "level": "90%"
     },
     {
-      "name": "React JS and Next JS",
-      "level": "90%"
+      "name": "xlwings",
+      "level": "75%"
+    },
+    {
+      "name": ".NET",
+      "level": "75%"
     },
     {
       "name": "Typescript",
-      "level": "75%"
-    },
-    {
-      "name": "Node JS",
-      "level": "75%"
-    },
-    {
-      "name": "Flutter",
       "level": "65%"
     },
     {
@@ -28,7 +28,7 @@ const SkillsSection = (props) => {
       "level": "75%"
     },
     {
-      "name": "HTML",
+      "name": "AWS",
       "level": "90%"
     },
     {
@@ -36,20 +36,20 @@ const SkillsSection = (props) => {
       "level": "65%"
     },
     {
-      "name": "CSS",
+      "name": "HTML & CSS",
       "level": "90%"
     },
   ]
   const experiences = [
     {
       "company": "Vah Vah Institute Pvt Ltd",
-      "duration": "May 2022 - Nov 2022",
+      "duration": "Jan 2022 - Nov 2022",
       "designation": "Associate Software Developer",
       "responsibilites": [
-        "Successfully executed the revamp of the company's primary website to feature a modern design, as well as incorporating additional sections to enhance the overall user experience.",
-        "Integrated additional functionalities into the company's admin website in accordance with specified requirements by utilizing efficient queries and optimized indexing to ensure rapid response times and improved performance.",
-        "Resolved over 50 technical issues within the administrative website through a thorough understanding of existing code and implementation of necessary modifications from both front-end and back-end perspectives.",
-        "Developed and implemented three cron services to automate the updation of database values, ensuring efficient operation and fulfillment of requirements."
+        "Spearheaded the transformation of manual, time-consuming data processes into automated workflows using advanced Excel VBA techniques.",
+        "Developed a dynamic dashboard using Excel VBA and power query that consolidated key performance indicators (KPI’s) from multiple sources.",
+        "Utilized C# and VB.NET to create customized COM Add-ins to meet specific needs of the users.",
+        "Utilized Pandas, NumPy, and other Python libraries to enhance data processing capabilities within Excel using xlwings."
       ]
     },
     {
