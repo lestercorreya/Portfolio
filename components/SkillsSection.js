@@ -4,64 +4,76 @@ const SkillsSection = (props) => {
   const { setRefs, skillsInView } = props
   const skills = [
     {
-      "name": "Excel VBA",
-      "level": "90%"
+      "name": "Microsoft Azure",
+      "level": "75%"
     },
     {
       "name": "Git",
       "level": "90%"
     },
     {
-      "name": "xlwings",
-      "level": "75%"
+      "name": "Excel VBA",
+      "level": "90%"
     },
     {
-      "name": ".NET",
-      "level": "75%"
+      "name": "Powershell",
+      "level": "80%"
     },
     {
       "name": "Typescript",
-      "level": "65%"
-    },
-    {
-      "name": "MongoDB",
-      "level": "75%"
-    },
-    {
-      "name": "AWS",
       "level": "90%"
     },
     {
-      "name": "MySQL",
-      "level": "65%"
+      "name": "Python",
+      "level": "90%"
     },
     {
-      "name": "HTML & CSS",
+      "name": "React JS",
       "level": "90%"
+    },
+    {
+      "name": "Node JS",
+      "level": "90%"
+    },
+    {
+      "name": "C#",
+      "level": "80%"
     },
   ]
   const experiences = [
     {
-      "company": "Vah Vah Institute Pvt Ltd",
-      "duration": "Jan 2022 - Nov 2022",
-      "designation": "Associate Software Developer",
+      "company": "RMIT University",
+      "duration": "January 2024 - Present",
+      "designation": "Application Development Officer",
       "responsibilites": [
-        "Spearheaded the transformation of manual, time-consuming data processes into automated workflows using advanced Excel VBA techniques.",
-        "Developed a dynamic dashboard using Excel VBA and power query that consolidated key performance indicators (KPI’s) from multiple sources.",
-        "Utilized C# and VB.NET to create customized COM Add-ins to meet specific needs of the users.",
-        "Utilized Pandas, NumPy, and other Python libraries to enhance data processing capabilities within Excel using xlwings."
+        "Developed and maintained custom Excel VBA solutions in collaboration with cross-functional teams. These solutions optimized various business processes through automation, leading to enhanced efficiency.",
+        "Conducted training sessions for end-users to enhance their proficiency in using custom software solutions, improving overall user adoption.",
+        "Implemented integration of Xlwings with Python enabling seamless interaction between Excel and Python environments for enhanced data processing and analysis.",
+        "Implemented database storage APIs using Flask to enhance data management, enabling seamless storage, retrieval, and manipulation."
       ]
     },
     {
-      "company": "Exathought Technology Consulting Pvt Ltd",
-      "duration": "Aug 2021 - Dec 2021",
-      "designation": "Software Developer Intern",
+      "company": "Stomble",
+      "duration": "April 2023 - July 2023",
+      "designation": "Junior Backend Engineer",
       "responsibilites": [
-        "Augmented the company's primary website by incorporating additional sections and utilizing third-party libraries such as Konva.js to implement intricate user interface elements.",
-        "Contributed to the development of a wholesaler-retailer cross-platform mobile app, serving as one of five front-end developers, using the Flutter framework.",
-        "Collaborated closely with both UI/UX designers and back-end developers to ensure that all functionalities were implemented with a focus on both aesthetic appeal and code maintainability, resulting in optimal performance of the application."
+        "Used Logic apps for Triggering actions based on pre-defined schedules, like sending daily reports or weekly reminders.",
+        "Optimized database queries and implemented indexing strategies in PostgreSQL, resulting in an improvement in query performance and reduced response times.",
+        "Defined pipeline configurations for steps within each stage such as installing dependencies, running build tools, executing tests, and deploying the software using YAML in Azure Pipelines.",
+        "Actively participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives, to foster effective collaboration and timely delivery of features."
       ]
-    }
+    },
+    {
+      "company": "Vah Vah Institute Pvt Ltd",
+      "duration": "June 2022 - November 2022",
+      "designation": "Associate Software Developer",
+      "responsibilites": [
+        "Created Infrastructure as Code (IaC) templates using ARM and Bicep to provision and manage Azure resources efficiently, ensuring consistency and scalability across environments.",
+        "Used Powershell to Manage resources in Azure, including provisioning, configuration, and deployment of services.",
+        "Automated repetitive tasks like user creation, permission management, software installation, and configuration on Windows systems using powershell.",
+        "Developed high-performance, SEO-friendly web application using Next.js and TypeScript, leveraging both server-side rendering (SSR) and static site generation (SSG) capabilities."
+      ]
+    },
   ]
 
   const [onceInView, setOnceInView] = useState(false)
