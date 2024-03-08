@@ -8,8 +8,8 @@ const SkillsSection = (props) => {
       "level": "75%"
     },
     {
-      "name": "Git",
-      "level": "90%"
+      "name": "Kubernetes",
+      "level": "75%"
     },
     {
       "name": "Excel VBA",
@@ -60,7 +60,8 @@ const SkillsSection = (props) => {
         "Used Logic apps for Triggering actions based on pre-defined schedules, like sending daily reports or weekly reminders.",
         "Optimized database queries and implemented indexing strategies in PostgreSQL, resulting in an improvement in query performance and reduced response times.",
         "Defined pipeline configurations for steps within each stage such as installing dependencies, running build tools, executing tests, and deploying the software using YAML in Azure Pipelines.",
-        "Actively participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives, to foster effective collaboration and timely delivery of features."
+        "Actively participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives, to foster effective collaboration and timely delivery of features.",
+        "Implemented horizontal pod autoscaling in a Kubernetes cluster to dynamically adjust the number of pod replicas based on CPU utilization."
       ]
     },
     {
