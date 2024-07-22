@@ -16,8 +16,8 @@ const SkillsSection = (props) => {
       "level": "90%"
     },
     {
-      "name": "Powershell",
-      "level": "80%"
+      "name": "Selenium",
+      "level": "75%"
     },
     {
       "name": "Typescript",
@@ -32,11 +32,11 @@ const SkillsSection = (props) => {
       "level": "90%"
     },
     {
-      "name": "Node JS",
+      "name": "Excel VBA",
       "level": "90%"
     },
     {
-      "name": "C#",
+      "name": "Flask",
       "level": "80%"
     },
   ]
@@ -46,10 +46,11 @@ const SkillsSection = (props) => {
       "duration": "January 2024 - Present",
       "designation": "Application Development Officer",
       "responsibilites": [
-        "Developed and maintained custom Excel VBA solutions in collaboration with cross-functional teams. These solutions optimized various business processes through automation, leading to enhanced efficiency.",
-        "Conducted training sessions for end-users to enhance their proficiency in using custom software solutions, improving overall user adoption.",
-        "Implemented integration of Xlwings with Python enabling seamless interaction between Excel and Python environments for enhanced data processing and analysis.",
-        "Implemented database storage APIs using Flask to enhance data management, enabling seamless storage, retrieval, and manipulation."
+        "Developed and maintained the Program Mapping Tool (PMT), an Excel VBA solution enhanced with Power Automate, Power BI, and Power Query, used by all colleges at RMIT, including CoBL, STEM, DSC, and RMIT Vietnam.",
+        "Integrated Python with Excel VBA using XLwings to enable complex logical functionalities.",
+        "Utilized Selenium for web scraping program information to automatically predict combinations, majors, and minors that students might complete or have completed.",
+        "Created user guides, instructional videos, and conducted training sessions to enhance end-user proficiency with custom software solutions, improving overall user adoption.",
+        "Connected with senior coordinators from each department every two weeks to gather feedback and additional requirements, while maintaining an issue tracker to promptly resolve any user issues."
       ]
     },
     {
@@ -57,11 +58,12 @@ const SkillsSection = (props) => {
       "duration": "April 2023 - July 2023",
       "designation": "Junior Backend Engineer",
       "responsibilites": [
-        "Used Logic apps for Triggering actions based on pre-defined schedules, like sending daily reports or weekly reminders.",
-        "Optimized database queries and implemented indexing strategies in PostgreSQL, resulting in an improvement in query performance and reduced response times.",
-        "Defined pipeline configurations for steps within each stage such as installing dependencies, running build tools, executing tests, and deploying the software using YAML in Azure Pipelines.",
+        "Used Logic apps for Triggering actions based on pre-defined schedules, like sending daily reports or weekly reminders to customers and staff.",
+        "Performed Database migration in MongoDB for a large customer dataset using tools such as mongodump and mongorestore to support new application requirements.",
+        "Enhanced existing CI/CD pipelines in Azure DevOps by incorporating tools such as YAML, Azure Repos, and Azure Pipelines, and making modifications to the testing stages to ensure more reliable delivery of high-quality software.",
         "Actively participated in Agile development processes, including daily stand-ups, sprint planning, and retrospectives, to foster effective collaboration and timely delivery of features.",
-        "Implemented horizontal pod autoscaling in a Kubernetes cluster to dynamically adjust the number of pod replicas based on CPU utilization."
+        "Managed and maintained Kubernetes Clusters by incorporating best practices for container orchestration and monitored the health of clusters using Prometheus and Grafana.",
+        "Used ARM and Bicep for creating IaC (Infrastructure as Code) templates for provisioning and managing Azure Resources."
       ]
     },
     {
@@ -69,10 +71,11 @@ const SkillsSection = (props) => {
       "duration": "June 2022 - November 2022",
       "designation": "Associate Software Developer",
       "responsibilites": [
-        "Created Infrastructure as Code (IaC) templates using ARM and Bicep to provision and manage Azure resources efficiently, ensuring consistency and scalability across environments.",
-        "Used Powershell to Manage resources in Azure, including provisioning, configuration, and deployment of services.",
-        "Automated repetitive tasks like user creation, permission management, software installation, and configuration on Windows systems using powershell.",
-        "Developed high-performance, SEO-friendly web application using Next.js and TypeScript, leveraging both server-side rendering (SSR) and static site generation (SSG) capabilities."
+        "Developed the frontend of an admin portal for a makeup academy, used by 50+ staff members, using Next.js and TypeScript leveraging both server-side rendering (SSR) and static site generation (SSG) capabilities.",
+        "Utilized UI frameworks such as Material UI and Tailwind CSS to create an aesthetically pleasing frontend.",
+        "Developed over 50 automated tests for new features using Jest, incorporating React Testing Library, Axios, and Supertest.",
+        "Virtualized test and dev environment servers using Docker and coupled it with Nginx for load balancing.",
+        "Contributed to the backend development team, enhancing functionalities using Python, Flask, and MongoDB, while integrating Redis for caching and implementing indexing for optimized database performance."
       ]
     },
   ]
