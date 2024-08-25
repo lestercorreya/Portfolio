@@ -33,7 +33,7 @@ export default function Home() {
     threshold: 0.5,
   });
   const { ref: skillsRef, inView: skillsInView } = useInView({
-    threshold: 0.5,
+    threshold: 0.2,
   });
   const { ref: projectsRef, inView: projectsInView } = useInView({
     threshold: 0.2,
